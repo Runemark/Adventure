@@ -1,6 +1,6 @@
 import Foundation
 
-class MainScene: CCNode, UITextFieldDelegate
+class HostScene: CCNode, UITextFieldDelegate
 {
     var info:DeviceInfo
     var interfaceUnit:Double
@@ -19,6 +19,10 @@ class MainScene: CCNode, UITextFieldDelegate
         nameField = UITextField()
         
         interfaceUnit = Double(info.view.height/10)
+        if (info.category == .kDevice_iPadRetina)
+        {
+            interfaceUnit = Double(info.view.height/15)
+        }
         
         textInputHeight = 0.7
         
@@ -115,7 +119,8 @@ class MainScene: CCNode, UITextFieldDelegate
     
     override func touchEnded(touch: CCTouch!, withEvent event: CCTouchEvent!)
     {
-        let ccTouchLocation:CGPoint = touch.locationInWorld()
+        let uiTouchLocation:CGPoint = touch.locationInView(touch.view)
+        let ccTouchLocation:CGPoint = convertUILocToCC(uiTouchLocation)
         
         let buttonRect:CGRect = CGRectMake(chatButton.touchBounds.origin.x + chatButton.position.x, chatButton.touchBounds.origin.y + chatButton.position.y, chatButton.touchBounds.size.width, chatButton.touchBounds.size.height)
         
@@ -124,6 +129,11 @@ class MainScene: CCNode, UITextFieldDelegate
             let displayName:String = getName()
             CCDirector.sharedDirector().replaceScene(GameScene(displayName:displayName), withTransition:CCTransition(fadeWithDuration:0.5))
         }
+    }
+    
+    func convertUILocToCC(uiTouchLocation:CGPoint) -> CGPoint
+    {
+        return CGPointMake(uiTouchLocation.x, info.view.height - uiTouchLocation.y)
     }
     
     //////////////////////////////

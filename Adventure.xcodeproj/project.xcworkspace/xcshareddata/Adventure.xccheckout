@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7E78212A-F7BA-4F07-B423-BC9670BBED75</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Adventure</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D813414F4D4E65AB96DEEF09D4287383A0342D1F</key>
+		<string>https://github.com/Runemark/Adventure.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Adventure.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D813414F4D4E65AB96DEEF09D4287383A0342D1F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Runemark/Adventure.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D813414F4D4E65AB96DEEF09D4287383A0342D1F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D813414F4D4E65AB96DEEF09D4287383A0342D1F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Adventure</string>
+		</dict>
+	</array>
+</dict>
+</plist>
